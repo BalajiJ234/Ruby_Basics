@@ -12,14 +12,14 @@ exercise-3
 Numbers and Math
 
   + plus
-	- minus
-	- slash
-	- asterisk
-	-	percent
-	- less-than
-	- greater than
-	- less than or equal to
-	- greater than or equal to
+	  minus
+	  slash
+	  asterisk
+	 	percent
+	  less-than
+	  greater than
+	  less than or equal to
+	  greater than or equal to
 
 exercise-4
 -
@@ -45,6 +45,14 @@ exercise-6
 -
 Printing and More Printing Printing printing
 
+exercise-7
+-
+Input values at run time.
+
+exercise-8
+-
+Arguments
+The ARGV is the "argument variable," a very standard name in programming that you will find used in many other languages. This variable holds the arguments you pass to your Ruby script when you run it. In this exercise you will get to play with this more and see what happens.
 
 
 References and links!
