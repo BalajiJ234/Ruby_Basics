@@ -55,7 +55,7 @@ p hash
 puts "4. "
 duplicates = {}
 array.each_with_index do |value, i|
-(i + 1).upto arraY.length - 1 do |j|
+(i + 1).upto array.length - 1 do |j|
 if array[j] == value
 duplicates[value] = [i] if duplicates[value].nil?
 duplicates[value] << j
@@ -65,3 +65,7 @@ end
 end
 
 p duplicates
+
+#write program to find first largest and second largest in ruby
+
+puts "First largest and second largest element in an array...#{array.sort[-1]} and #{array.sort[-2]}"
