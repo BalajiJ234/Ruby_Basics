@@ -1,5 +1,5 @@
 #Arrays Elements
-array = [1, 3, 4, 5, 1, 3, 3, 6]
+array = [1, 3, 5, 4, 1, 3, 3, 6]
 
 #unique elements in the Arrays
 u_array = array.uniq
@@ -17,7 +17,7 @@ puts "Adding Items to Array!"
 puts "push method or <<"
 
 puts array.push(4) # push method #add a new element at last of the array
-puts array<<(8) #<< Method
+puts array<<(8) #<< Method add a new element at last of the array
 
 puts "unshift method"
 
@@ -30,41 +30,43 @@ puts "Removing Elements to Array!"
 
 puts "pop method",array.pop #remove the last element
 puts "shift method",array.shift #remove the first element
-puts "delete method",array.delete(4) #remeove the elements
+puts "delete method",array.delete(8) #remove the element
 
 puts "slicing the array"
 puts "array[1..5]",array[1..5]
 
 puts "3. Print the Index of each element"
 array.each_with_index do |num, index|
-    print index ," => ",num,"\n"
+    print "#{index} "
   end
 puts
 
+puts "4. find first index of a repeated element"
+repeat = {}
+array.each_with_index do |value, i|
+  (i + 1).upto array.length - 1 do |j|
+    if array[j] == value
+      repeat[value] = i if repeat[value].nil?
+      break
+    end
+  end
+end
 
+#method 1 Frequency of each element in the array
 hash = Hash.new(0)
 array.each {|key| hash[key] += 1}
-print "Array is..."
-p array
-puts
 puts "5. Frequency of each element in the array!"
 p hash
-#puts (hash.map { |key, value| "#{key}->#{value}"  }.join(','))
 
+#method 2 Frequency of each element in the array
+hash = Hash.new(0)
+array.each do |key|
+  hash[key] += 1
+end
+puts "5. Frequency of each element in the array!"
+p hash
 
-puts "4. "
-duplicates = {}
-array.each_with_index do |value, i|
-(i + 1).upto array.length - 1 do |j|
-if array[j] == value
-duplicates[value] = [i] if duplicates[value].nil?
-duplicates[value] << j
-break
-end
-end
-end
-
-p duplicates
+p repeat
 
 #write program to find first largest and second largest in ruby
 
