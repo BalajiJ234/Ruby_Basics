@@ -67,7 +67,8 @@ exercise-10
 exercise-11
 -
 ##Array and its Methods.(240+)
-There are lot of array methods are in Ruby.
+There are lot of array methods are in Ruby:
+
     *array.uniq #It will eliminate duplicate data
     *array.take(n) #It will returns the first 'n' Elements of an array.
     *array.drop(n) #It will returns the remove first 'n' Elements of an arrays.
@@ -77,11 +78,12 @@ There are lot of array methods are in Ruby.
     *array.pop #remove the last element
     *array.shift #remove the first element
     *array.delete(n) #remeove the element
+
 In IRB, by using this command [].methods, we can list the all arrays methods.
 
 References and links!
 -
 
-	* https://learnrubythehardway.org/book/preface.html
+	+ https://learnrubythehardway.org/book/preface.html
   * http://ruby-for-beginners.rubymonstas.org/learning_to_program.html
   * https://www.rubyguides.com/ruby-tutorial/
