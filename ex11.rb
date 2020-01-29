@@ -4,36 +4,35 @@ array = [1, 3, 5, 4, 1, 3, 3, 6]
 #unique elements in the Arrays
 u_array = array.uniq
 puts "1. Unique array"
-puts u_array
+p u_array
 
 #Methods of array.
 puts "2. Methods of array"
-puts "Take method:",array.take(3) #It will returns the first 'n' Elements of an array.
-
-puts "Drop method:",array.drop(4) #It will returns the remove first 'n' Elements of an array.
+print "Take method:",array.take(3)," \n" #It will returns the first 'n' Elements of an array.
+print "Drop method:",array.drop(4)," \n" #It will returns the remove first 'n' Elements of an array.
 
 puts "Adding Items to Array!"
 
 puts "push method or <<"
 
-puts array.push(4) # push method #add a new element at last of the array
-puts array<<(8) #<< Method add a new element at last of the array
+p array.push(4) # push method #add a new element at last of the array
+p array<<(8) #<< Method add a new element at last of the array
 
 puts "unshift method"
 
-puts array.unshift(5) #add a new element at the beginning of an Array
+p array.unshift(5) #add a new element at the beginning of an Array
 
-puts "insert method"
-puts array.insert(4,8) #add a new element at any position in an array.
+p "insert method"
+p array.insert(4,8) #add a new element at any position in an array.
 
-puts "Removing Elements to Array!"
+p "Removing Elements to Array!"
 
-puts "pop method",array.pop #remove the last element
-puts "shift method",array.shift #remove the first element
-puts "delete method",array.delete(8) #remove the element
+p "pop method",array.pop #remove the last element
+p "shift method",array.shift #remove the first element
+p "delete method",array.delete(8) #remove the element
 
 puts "slicing the array"
-puts "array[1..5]",array[1..5]
+p "array[1..5]",array[1..5]
 
 puts "3. Print the Index of each element"
 array.each_with_index do |num, index|
@@ -46,11 +45,12 @@ repeat = {}
 array.each_with_index do |value, i|
   (i + 1).upto array.length - 1 do |j|
     if array[j] == value
-      repeat[value] = i if repeat[value].nil?
+      repeat[value] = i
       break
     end
   end
 end
+p repeat
 
 #method 1 Frequency of each element in the array
 hash = Hash.new(0)
