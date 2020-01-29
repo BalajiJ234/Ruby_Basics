@@ -81,6 +81,11 @@ There are lot of array methods are in Ruby:
 
 In IRB, by using this command [].methods, we can list the all arrays methods.
 
+exercise-12
+-
+Stack and Queue - Using Classes and Objects
+Especially for understanding classes and objects!
+
 References and links!
 -
 
