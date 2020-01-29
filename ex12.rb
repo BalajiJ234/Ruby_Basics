@@ -46,7 +46,7 @@ stack.pop()
 stack.display()
 
 a = []
-queue = Queue.new()
+queue = Queue.new(a)
 queue.enqueue(11)
 queue.enqueue(12)
 queue.enqueue(32)
