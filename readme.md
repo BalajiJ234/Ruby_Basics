@@ -86,9 +86,14 @@ exercise-12
 Stack and Queue - Using Classes and Objects
 Especially for understanding classes and objects!
 
+exercise-13
+-
+Metaprogramming
+Examples!
+
 References and links!
 -
 
-	+ https://learnrubythehardway.org/book/preface.html
+	* https://learnrubythehardway.org/book/preface.html
   * http://ruby-for-beginners.rubymonstas.org/learning_to_program.html
   * https://www.rubyguides.com/ruby-tutorial/
