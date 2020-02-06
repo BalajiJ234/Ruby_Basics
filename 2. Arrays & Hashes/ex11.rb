@@ -29,7 +29,7 @@ p "Removing Elements to Array!"
 
 p "pop method",array.pop #remove the last element
 p "shift method",array.shift #remove the first element
-p "delete method",array.delete(8) #remove the element
+p "delete method",array.delete(8) #remove all occurences of specified element
 
 puts "slicing the array"
 p "array[1..5]",array[1..5]
