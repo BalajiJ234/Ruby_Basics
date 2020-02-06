@@ -44,9 +44,11 @@ puts "4. find first index of a repeated element"
 repeat = {}
 array.each_with_index do |value, i|
   (i + 1).upto array.length - 1 do |j|
-    if array[j] == value
-      repeat[value] = i
-      break
+    if !repeat.keys.include? value
+      if array[j] == value
+        repeat[value] = i
+        break
+      end
     end
   end
 end
